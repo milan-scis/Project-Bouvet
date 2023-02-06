@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BouvetTask.Models;
+﻿using System.Collections.Generic;
 using BouvetTask.Dtos.Epic;
-
 
 namespace BouvetTask.Dtos.Project
 {

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace BouvetTask.Dtos.Epic
+﻿namespace BouvetTask.Dtos.Epic
 {
     public class AddEpicDto
     {

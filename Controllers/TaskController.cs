@@ -1,12 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using BouvetTask.Models;
 using BouvetTask.Services.Interfaces;
 using BouvetTask.Dtos.Task;
-using Task = BouvetTask.Models.Task;
 
 namespace BouvetTask.Controllers
 {

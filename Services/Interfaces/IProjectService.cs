@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using BouvetTask.Models;
 using BouvetTask.Dtos.Project;
 
 namespace BouvetTask.Services.Interfaces
