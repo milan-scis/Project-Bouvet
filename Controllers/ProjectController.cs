@@ -60,14 +60,14 @@ namespace BouvetTask.Controllers
         [HttpPut("Update")]
         public async Task<ActionResult<string>> Update(UpdateProjectDto updatedProject)
         {
-            //try
-            //{
-            return Ok(await _projectService.UpdateProject(updatedProject));
-            //}
-            //catch
-            //{
-            //    return BadRequest(_errorMessage);
-            //}
+            try
+            {
+                return Ok(await _projectService.UpdateProject(updatedProject));
+            }
+            catch
+            {
+                return BadRequest(_errorMessage);
+            }
         }
 
         [HttpDelete("{projectId}")]
