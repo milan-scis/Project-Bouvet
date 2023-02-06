@@ -1,0 +1,31 @@
+USE [Bouvet_DB]
+GO
+
+/****** Object:  Table [dbo].[Tasks]    Script Date: 06.02.2023 17:51:19 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Tasks](
+	[TaskId] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [varchar](50) NOT NULL,
+	[Description] [varchar](50) NOT NULL,
+	[EpicId] [int] NOT NULL,
+ CONSTRAINT [PK_Tasks] PRIMARY KEY CLUSTERED 
+(
+	[TaskId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Tasks]  WITH CHECK ADD  CONSTRAINT [FK_Epics_Tasks] FOREIGN KEY([EpicId])
+REFERENCES [dbo].[Epics] ([EpicId])
+ON UPDATE CASCADE
+ON DELETE CASCADE
+GO
+
+ALTER TABLE [dbo].[Tasks] CHECK CONSTRAINT [FK_Epics_Tasks]
+GO
+
